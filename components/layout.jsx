@@ -8,6 +8,12 @@ export default function Layout({ children }) {
           href={`https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css`}
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
+          integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
+          crossOrigin="anonymous"
+        />
       </Head>
       <div>{children}</div>
     </div>
