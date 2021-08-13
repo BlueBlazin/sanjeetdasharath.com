@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MdArrowDropDown } from "react-icons/md";
+import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import { useState } from "react";
 
 export default function Header() {
@@ -34,7 +34,7 @@ function MobileHeader() {
         onClick={toggleVisibility}
         className="ml-auto my-3 mr-4 h-9 w-9 text-4xl flex justify-center rounded-full active:border active:border-gray-400 transition duration-100 ease-in"
       >
-        <MdArrowDropDown />
+        {visibility === "hidden" ? <MdArrowDropDown /> : <MdArrowDropUp />}
       </button>
       <div
         className={`bg-gray-300 transition duration-100 ease-in ${visibility}`}

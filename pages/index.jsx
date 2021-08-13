@@ -88,7 +88,7 @@ export default function HomePage() {
           <ProjectCard
             imgSrc="/../public/projects/website.png"
             title="Personal website"
-            description="Personal website and blog of yours truly."
+            description="Personal website and blog of yours truly. Crafted with love using next.js and tailwind.css."
             href="/"
           >
             <ReactIcon />
