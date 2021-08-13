@@ -2,6 +2,14 @@ import Link from "next/link";
 
 import Layout from "../components/layout";
 import ProjectCard from "../components/project-card";
+import {
+  JavascriptIcon,
+  PythonIcon,
+  RustIcon,
+  TailwindIcon,
+  ReactIcon,
+  TypescriptIcon,
+} from "../components/languages";
 
 export default function HomePage() {
   return (
@@ -39,25 +47,53 @@ export default function HomePage() {
             title="Thislang"
             description="This-lang is a javascript bytecode VM interpreter implemented in javascript. It can run itself making it self-hosting."
             href="/projects/thislang"
-          />
+          >
+            <JavascriptIcon />
+          </ProjectCard>
           <ProjectCard
             imgSrc="/../public/projects/gbemu.png"
             title="GBEmu"
-            description="A Gameboy color emulator that runs in the browser. Implemented in Rust and running in WASM."
+            description="A Gameboy color emulator that runs in the browser. Implemented in Rust and running on WASM."
             href="/"
-          />
+          >
+            <RustIcon />
+            <JavascriptIcon />
+          </ProjectCard>
+          <ProjectCard
+            imgSrc="/../public/projects/giron.png"
+            title="Giron"
+            description="ECMAScript parser written in Rust which outputs an ESTree compliant JSON abstract syntax tree."
+            href="/"
+          >
+            <RustIcon />
+          </ProjectCard>
           <ProjectCard
             imgSrc="/../public/projects/shuttle.png"
             title="Shuttle"
             description="Shuttle is a screen and webcam recorder. It's a bit like loom but rather free and a webapp instead of an extension."
             href="/"
-          />
+          >
+            <TypescriptIcon />
+            <ReactIcon />
+          </ProjectCard>
           <ProjectCard
             imgSrc="/../public/projects/dotados.png"
-            title="example project"
-            description="In this example project I made this cool thing."
+            title="Dota Degrees of Separation"
+            description="A webapp to explore the degrees of separation between pro players of the online game Dota 2."
             href="/"
-          />
+          >
+            <PythonIcon />
+            <ReactIcon />
+          </ProjectCard>
+          <ProjectCard
+            imgSrc="/../public/projects/website.png"
+            title="Personal website"
+            description="Personal website and blog of yours truly."
+            href="/"
+          >
+            <ReactIcon />
+            <TailwindIcon />
+          </ProjectCard>
         </div>
         <Link href="/projects">
           <a className="cursor-pointer text-blue-700">

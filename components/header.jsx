@@ -6,7 +6,13 @@ export default function Header() {
   return (
     <>
       <MobileHeader />
-      <div className="h-16 p-3 hidden md:block">My header</div>
+      <div className="h-16 hidden md:flex items-center">
+        <HeaderLink name="Home" href="/" />
+        <HeaderLink name="Projects" href="/projects" />
+        <HeaderLink name="Blog" href="/blog" />
+        <HeaderLink name="Knowledge Bank" href="/knowledge-bank" />
+        <HeaderLink name="About" href="/about" />
+      </div>
     </>
   );
 }
@@ -33,23 +39,33 @@ function MobileHeader() {
       <div
         className={`bg-gray-300 transition duration-100 ease-in ${visibility}`}
       >
-        <HeaderLink name="Home" href="/" />
-        <HeaderLink name="Projects" href="/projects" />
-        <HeaderLink name="Blog" href="/blog" />
-        <HeaderLink name="Knowledge Bank" href="/knowledge-bank" />
-        <HeaderLink name="About" href="/about" />
+        <MobileHeaderLink name="Home" href="/" />
+        <MobileHeaderLink name="Projects" href="/projects" />
+        <MobileHeaderLink name="Blog" href="/blog" />
+        <MobileHeaderLink name="Knowledge Bank" href="/knowledge-bank" />
+        <MobileHeaderLink name="About" href="/about" />
       </div>
     </div>
   );
 }
 
-function HeaderLink({ name, href }) {
+function MobileHeaderLink({ name, href }) {
   return (
     <div className={`flex-1 text-center py-10`}>
       <Link href={href}>
         <a className="px-3 py-2 active:text-gray-700 hover:text-gray-500">
           {name}
         </a>
+      </Link>
+    </div>
+  );
+}
+
+function HeaderLink({ name, href }) {
+  return (
+    <div className="mx-12 text-gray-600">
+      <Link href={href}>
+        <a className="active:text-gray-700 hover:text-gray-500">{name}</a>
       </Link>
     </div>
   );
