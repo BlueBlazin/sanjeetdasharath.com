@@ -1,8 +1,10 @@
 import Head from "next/head";
 
+import Header from "./header";
+
 export default function Layout({ children }) {
   return (
-    <div>
+    <>
       <Head>
         <link
           href={`https://unpkg.com/prismjs@0.0.1/themes/prism-okaidia.css`}
@@ -15,7 +17,10 @@ export default function Layout({ children }) {
           crossOrigin="anonymous"
         />
       </Head>
-      <div>{children}</div>
-    </div>
+      <div className="w-screen h-screen bg-gray-50 flex flex-col">
+        <Header />
+        {children}
+      </div>
+    </>
   );
 }

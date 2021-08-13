@@ -1,16 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import Layout from "../components/layout";
 import { getSortedPostsData } from "../lib/posts";
+import Layout from "../components/layout";
 
 export default function BlogPage({ posts }) {
   return (
     <Layout>
-      <Head>
-        <title></title>
-      </Head>
-
       <div>
         <ul>
           {posts.map(({ id, date, title }) => (
