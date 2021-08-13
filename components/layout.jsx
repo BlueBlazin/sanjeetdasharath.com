@@ -17,7 +17,7 @@ export default function Layout({ children }) {
           crossOrigin="anonymous"
         />
       </Head>
-      <div className="w-screen h-screen bg-gray-50 flex flex-col items-center">
+      <div className="mw-screen mh-screen overflow-x-hidden bg-gray-50 flex flex-col items-center">
         <Header />
         {children}
       </div>
