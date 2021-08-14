@@ -8,12 +8,15 @@ export default function Header() {
   return (
     <>
       <MobileHeader />
-      <div className="h-16 hidden md:flex items-center">
+      <div className="hidden md:flex items-center h-24">
         <HeaderLink name="Home" href="/" />
         <HeaderLink name="Projects" href="/projects" />
         <HeaderLink name="Blog" href="/blog" />
         <HeaderLink name="Knowledge Bank" href="/knowledge-bank" />
         <HeaderLink name="About" href="/about" />
+        <div className="hidden md:block fixed right-11">
+          <ModeToggle />
+        </div>
       </div>
     </>
   );
@@ -27,7 +30,7 @@ function MobileHeader() {
   }
 
   return (
-    <div className="w-screen flex flex-col text-gray-600 bg-gray-200 md:hidden">
+    <div className="md:hidden w-screen flex flex-col text-gray-600 bg-gray-200 dark:text-gray-300 dark:bg-gray-700">
       <div className="flex items-center px-4">
         <div className="ml-5">
           <ModeToggle />
@@ -40,7 +43,7 @@ function MobileHeader() {
         </button>
       </div>
       <div
-        className={`bg-gray-300 transition duration-100 ease-in ${visibility}`}
+        className={`transition duration-100 ease-in ${visibility} bg-gray-300 dark:bg-gray-800`}
       >
         <MobileHeaderLink name="Home" href="/" />
         <MobileHeaderLink name="Projects" href="/projects" />
@@ -66,9 +69,11 @@ function MobileHeaderLink({ name, href }) {
 
 function HeaderLink({ name, href }) {
   return (
-    <div className="mx-12 text-gray-600">
+    <div className="mx-12 text-gray-600 dark:text-gray-200">
       <Link href={href}>
-        <a className="active:text-gray-700 hover:text-gray-500">{name}</a>
+        <a className="active:text-gray-700 hover:text-gray-500 dark:hover:text-gray-300 dark:active:text-gray-500">
+          {name}
+        </a>
       </Link>
     </div>
   );

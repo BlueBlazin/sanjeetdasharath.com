@@ -18,7 +18,7 @@ export default function Layout({ children }) {
           crossOrigin="anonymous"
         />
       </Head>
-      <div className="mw-screen mh-screen overflow-x-hidden bg-gray-50 flex flex-col items-center">
+      <div className="mw-screen mh-screen overflow-x-hidden flex flex-col items-center bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-200">
         <Header />
         {children}
         <Footer />

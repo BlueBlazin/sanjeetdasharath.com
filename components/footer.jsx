@@ -5,16 +5,22 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className=" bg-gray-200 h-52 w-screen flex flex-col justify-center items-center mt-40">
-      <div className="text-gray-500 text-sm">{`© ${year} Sanjeet N. Dasharath`}</div>
+    <footer className="h-52 w-screen flex flex-col justify-center items-center mt-40 bg-gray-200 dark:bg-gray-800">
+      <div className="text-sm text-gray-500 dark:text-gray-300">{`© ${year} Sanjeet N. Dasharath`}</div>
       <div className="flex">
         <Link href="https://twitter.com/suicuneblue">
-          <a target="_blank" className="mx-4 mt-5 text-xl text-gray-600">
+          <a
+            target="_blank"
+            className="mx-4 mt-5 text-xl text-gray-600 dark:text-gray-200"
+          >
             <FaTwitter />
           </a>
         </Link>
         <Link href="https://github.com/BlueBlazin">
-          <a target="_blank" className="mx-4 mt-5 text-xl text-gray-600">
+          <a
+            target="_blank"
+            className="mx-4 mt-5 text-xl text-gray-600 dark:text-gray-200"
+          >
             <FaGithub />
           </a>
         </Link>
