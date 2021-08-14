@@ -5,7 +5,7 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider>
+    <ThemeProvider attribute="class">
       <MDXProvider>
         <Component {...pageProps} />
       </MDXProvider>

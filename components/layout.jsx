@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import Header from "./header";
+import Footer from "./footer";
 
 export default function Layout({ children }) {
   return (
@@ -20,6 +21,7 @@ export default function Layout({ children }) {
       <div className="mw-screen mh-screen overflow-x-hidden bg-gray-50 flex flex-col items-center">
         <Header />
         {children}
+        <Footer />
       </div>
     </>
   );

@@ -2,6 +2,8 @@ import Link from "next/link";
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import { useState } from "react";
 
+import ModeToggle from "./mode-toggle";
+
 export default function Header() {
   return (
     <>
@@ -21,21 +23,22 @@ function MobileHeader() {
   const [visibility, setVisibility] = useState("hidden");
 
   function toggleVisibility() {
-    if (visibility === "hidden") {
-      setVisibility("block");
-    } else {
-      setVisibility("hidden");
-    }
+    setVisibility(visibility === "hidden" ? "block" : "hidden");
   }
 
   return (
     <div className="w-screen flex flex-col text-gray-600 bg-gray-200 md:hidden">
-      <button
-        onClick={toggleVisibility}
-        className="ml-auto my-3 mr-4 h-9 w-9 text-4xl flex justify-center rounded-full active:border active:border-gray-400 transition duration-100 ease-in"
-      >
-        {visibility === "hidden" ? <MdArrowDropDown /> : <MdArrowDropUp />}
-      </button>
+      <div className="flex items-center px-4">
+        <div className="ml-5">
+          <ModeToggle />
+        </div>
+        <button
+          onClick={toggleVisibility}
+          className="ml-auto my-3 mr-4 h-9 w-9 text-4xl flex justify-center rounded-full active:border active:border-gray-400 transition duration-100 ease-in"
+        >
+          {visibility === "hidden" ? <MdArrowDropDown /> : <MdArrowDropUp />}
+        </button>
+      </div>
       <div
         className={`bg-gray-300 transition duration-100 ease-in ${visibility}`}
       >
