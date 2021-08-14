@@ -59,7 +59,7 @@ export default function HomePage() {
         <ViewAllProjectsLink />
         <div className="grid grid-cols-1 md:grid-cols-2">
           <ProjectCard
-            imgSrc="/../public/projects/thislang.png"
+            imgSrc="/projects/thislang.png"
             title="Thislang"
             description="This-lang is a javascript bytecode VM interpreter implemented in javascript. It can run itself making it self-hosting."
             href="https://github.com/BlueBlazin/thislang"
@@ -67,7 +67,7 @@ export default function HomePage() {
             <JavascriptIcon />
           </ProjectCard>
           <ProjectCard
-            imgSrc="/../public/projects/gbemu.png"
+            imgSrc="/projects/gbemu.png"
             title="GBEmu"
             description="A Gameboy color emulator that runs in the browser. Implemented in Rust and running on WASM."
             href="https://github.com/BlueBlazin/gbemu"
@@ -76,7 +76,7 @@ export default function HomePage() {
             <JavascriptIcon />
           </ProjectCard>
           <ProjectCard
-            imgSrc="/../public/projects/giron.png"
+            imgSrc="/projects/giron.png"
             title="Giron"
             description="ECMAScript parser written in Rust which outputs an ESTree compliant JSON abstract syntax tree."
             href="https://github.com/BlueBlazin/giron"
@@ -84,7 +84,7 @@ export default function HomePage() {
             <RustIcon />
           </ProjectCard>
           <ProjectCard
-            imgSrc="/../public/projects/shuttle.png"
+            imgSrc="/projects/shuttle.png"
             title="Shuttle"
             description="Shuttle is a screen and webcam recorder. It's a bit like loom but rather free and a webapp instead of an extension."
             href="https://github.com/BlueBlazin/shuttle"
@@ -93,7 +93,7 @@ export default function HomePage() {
             <ReactIcon />
           </ProjectCard>
           <ProjectCard
-            imgSrc="/../public/projects/dotados.png"
+            imgSrc="/projects/dotados.png"
             title="Dota Degrees of Separation"
             description="A webapp to explore the degrees of separation between pro players of the online game Dota 2."
             href="https://github.com/BlueBlazin/dotados"
@@ -102,7 +102,7 @@ export default function HomePage() {
             <ReactIcon />
           </ProjectCard>
           <ProjectCard
-            imgSrc="/../public/projects/website.png"
+            imgSrc="/projects/website.png"
             title="Personal website"
             description="Personal website and blog of yours truly. Crafted with love using next.js and tailwind.css."
             href="https://github.com/BlueBlazin/sanjeetdasharath.com"

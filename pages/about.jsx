@@ -11,7 +11,7 @@ export default function AboutPage() {
       <div className="flex flex-col items-center mt-8">
         <div className="w-36 h-36">
           <Image
-            src="/../public/profilepic.png"
+            src="/profilepic.png"
             width={150}
             height={150}
             alt="profile picture"
