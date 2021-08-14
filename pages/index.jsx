@@ -10,7 +10,9 @@ import {
   TailwindIcon,
   ReactIcon,
   TypescriptIcon,
+  NextJsIcon,
 } from "../components/languages";
+import Description, { Paragraph } from "../components/description";
 
 export default function HomePage() {
   return (
@@ -34,8 +36,8 @@ export default function HomePage() {
           </a>
         </Link>
       </h2>
-      <section className="px-10 mt-10 flex flex-col items-center max-w-2xl">
-        <p className="my-3 max-w-2xl text-center sm:text-left">
+      {/* <section className="px-10 mt-10 flex flex-col items-center max-w-2xl">
+        <p className="my-3 text-center sm:text-left">
           I&apos;m a{" "}
           <span className="font-semibold text-blue-500">programmer</span> and{" "}
           <span className="font-semibold text-blue-500">
@@ -49,7 +51,24 @@ export default function HomePage() {
           implementation, and web development. That&apos;s quite an eclectic
           mix, but those are the areas I love.
         </p>
-      </section>
+      </section> */}
+
+      <Description>
+        <Paragraph>
+          I&apos;m a{" "}
+          <span className="font-semibold text-blue-500">programmer</span> and{" "}
+          <span className="font-semibold text-blue-500">
+            machine learning engineer
+          </span>{" "}
+          currently located in Sydney, Australia 🦘 🇦🇺.
+        </Paragraph>
+
+        <Paragraph>
+          My main interests are deep learning, programming language
+          implementation, and web development. That&apos;s quite an eclectic
+          mix, but those are the areas I love.
+        </Paragraph>
+      </Description>
 
       <section className="flex flex-col items-center my-10">
         <h2 className="text-3xl mb-3">Projects</h2>
@@ -104,6 +123,7 @@ export default function HomePage() {
             description="Personal website and blog of yours truly. Crafted with love using next.js and tailwind.css."
             href="/projects/personal-website"
           >
+            <NextJsIcon />
             <ReactIcon />
             <TailwindIcon />
           </ProjectCard>
