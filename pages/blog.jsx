@@ -7,7 +7,7 @@ import Layout from "../components/layout";
 export default function BlogPage({ posts }) {
   return (
     <Layout>
-      <div>
+      <div className="my-12">
         <ul>
           {posts.map(({ id, date, title }) => (
             <li key={id}>
