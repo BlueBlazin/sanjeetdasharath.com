@@ -18,7 +18,7 @@ export default function ModeToggle() {
       onClick={toggleTheme}
       className="cursor-pointer text-xl w-8 flex justify-center"
     >
-      {mounted && (resolvedTheme === "light" ? <RiSunFill /> : <BsMoon />)}
+      {mounted && (resolvedTheme === "light" ? <BsMoon /> : <RiSunFill />)}
     </div>
   );
 }
