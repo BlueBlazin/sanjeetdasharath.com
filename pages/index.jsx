@@ -36,22 +36,6 @@ export default function HomePage() {
           </a>
         </Link>
       </h2>
-      {/* <section className="px-10 mt-10 flex flex-col items-center max-w-2xl">
-        <p className="my-3 text-center sm:text-left">
-          I&apos;m a{" "}
-          <span className="font-semibold text-blue-500">programmer</span> and{" "}
-          <span className="font-semibold text-blue-500">
-            machine learning engineer
-          </span>{" "}
-          currently located in Sydney, Australia 🦘 🇦🇺.
-        </p>
-
-        <p className="my-3 text-center sm:text-left">
-          My main interests are deep learning, programming language
-          implementation, and web development. That&apos;s quite an eclectic
-          mix, but those are the areas I love.
-        </p>
-      </section> */}
 
       <Description>
         <Paragraph>
@@ -78,7 +62,7 @@ export default function HomePage() {
             imgSrc="/../public/projects/thislang.png"
             title="Thislang"
             description="This-lang is a javascript bytecode VM interpreter implemented in javascript. It can run itself making it self-hosting."
-            href="/projects/thislang"
+            href="https://github.com/BlueBlazin/thislang"
           >
             <JavascriptIcon />
           </ProjectCard>
@@ -86,7 +70,7 @@ export default function HomePage() {
             imgSrc="/../public/projects/gbemu.png"
             title="GBEmu"
             description="A Gameboy color emulator that runs in the browser. Implemented in Rust and running on WASM."
-            href="/projects/gbemu"
+            href="https://github.com/BlueBlazin/gbemu"
           >
             <RustIcon />
             <JavascriptIcon />
@@ -95,7 +79,7 @@ export default function HomePage() {
             imgSrc="/../public/projects/giron.png"
             title="Giron"
             description="ECMAScript parser written in Rust which outputs an ESTree compliant JSON abstract syntax tree."
-            href="/projects/giron"
+            href="https://github.com/BlueBlazin/giron"
           >
             <RustIcon />
           </ProjectCard>
@@ -103,7 +87,7 @@ export default function HomePage() {
             imgSrc="/../public/projects/shuttle.png"
             title="Shuttle"
             description="Shuttle is a screen and webcam recorder. It's a bit like loom but rather free and a webapp instead of an extension."
-            href="/projects/shuttle"
+            href="https://github.com/BlueBlazin/shuttle"
           >
             <TypescriptIcon />
             <ReactIcon />
@@ -112,7 +96,7 @@ export default function HomePage() {
             imgSrc="/../public/projects/dotados.png"
             title="Dota Degrees of Separation"
             description="A webapp to explore the degrees of separation between pro players of the online game Dota 2."
-            href="/projects/dotados"
+            href="https://github.com/BlueBlazin/dotados"
           >
             <PythonIcon />
             <ReactIcon />
@@ -121,7 +105,7 @@ export default function HomePage() {
             imgSrc="/../public/projects/website.png"
             title="Personal website"
             description="Personal website and blog of yours truly. Crafted with love using next.js and tailwind.css."
-            href="/projects/personal-website"
+            href="https://github.com/BlueBlazin/sanjeetdasharath.com"
           >
             <NextJsIcon />
             <ReactIcon />
