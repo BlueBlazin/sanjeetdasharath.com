@@ -10,7 +10,7 @@ export default function ProjectCard({
 }) {
   return (
     <Link href={href} passHref>
-      <div className="w-80 shadow-md m-5 flex flex-col align-center rounded-md cursor-pointer text-gray-800 justify-between">
+      <div className="w-80 shadow-lg sm:shadow-md m-5 flex flex-col align-center rounded-md cursor-pointer text-gray-800 justify-between hover:-translate-y-1 transition duration-200">
         <Image
           src={imgSrc}
           alt={`Project: ${title}`}
