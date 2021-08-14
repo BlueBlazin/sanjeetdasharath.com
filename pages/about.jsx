@@ -50,7 +50,7 @@ export default function AboutPage() {
         <Description>
           <Paragraph>
             Hi, I&apos;m Sanjeet. I&apos;m currently working as a machine
-            learning engineer at a startup in Sydney, Australia.
+            learning engineer at HIVERY, a startup in Sydney.
           </Paragraph>
           <Paragraph>
             I&apos;m a programmer with interests in deep learning, systems
