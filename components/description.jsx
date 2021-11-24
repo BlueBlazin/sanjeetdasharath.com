@@ -10,7 +10,9 @@ export default function Description({ children, className }) {
 
 export function Paragraph({ children, className }) {
   return (
-    <p className={`my-3 w-full text-center sm:text-left ${className}`}>
+    <p
+      className={`text-center my-3 w-full sm:w-full sm:text-left ${className}`}
+    >
       {children}
     </p>
   );
