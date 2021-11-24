@@ -47,8 +47,8 @@ export default function AboutPage() {
             </a>
           </Link>
         </div>
-        <Description className={"text-custom"}>
-          <Paragraph className="mb-4">
+        <Description className={"text-custom !items-start"}>
+          <Paragraph className="!text-left !mb-4">
             I am someone who enjoys doing machine learning, systems programming,
             as well as web/mobile development. My work has encompassed all three
             of these at different points in time and my hobby projects are
@@ -59,7 +59,7 @@ export default function AboutPage() {
             Some hobby projects that I have recently done:
           </Paragraph>
 
-          <Paragraph className="mb-4">
+          <Paragraph className="!text-left !mb-4">
             <span className="font-black">GBEmu</span> - is a gameboy color
             emulator that runs in the browser. It’s written in Rust and was
             built from the start with the intention of being compiled to WASM
@@ -73,7 +73,7 @@ export default function AboutPage() {
             </div>
           </Paragraph>
 
-          <Paragraph className="mb-4">
+          <Paragraph className="!text-left !mb-4">
             <span className="font-black">Thislang</span> - is a subset of
             javascript (a bytecode VM javascript engine) implemented in that
             subset of javascript. It can run itself and is fairly feature
@@ -87,7 +87,7 @@ export default function AboutPage() {
             </div>
           </Paragraph>
 
-          <Paragraph className="mb-4">
+          <Paragraph className="!text-left !mb-4">
             <span className="font-black">Giron</span> - is a ECMAScript (partly
             spec compliant) parser written in Rust. I made it as a project to
             learn Rust and it can easily parse through minified react and
@@ -102,7 +102,7 @@ export default function AboutPage() {
             </div>
           </Paragraph>
 
-          <Paragraph className="mb-4">
+          <Paragraph className="!text-left !mb-4">
             <span className="font-black">Rslox</span> - the lox programming
             language implemented in Rust.
             <div>
@@ -114,25 +114,25 @@ export default function AboutPage() {
             </div>
           </Paragraph>
 
-          <Paragraph className="mb-4">
+          <Paragraph className="!text-left !mb-4">
             I have spent a lot of my programming journey writing Python, Rust,
             and Javascript (as well as Typescript). In the past I have also used
             Java and C.
           </Paragraph>
 
-          <Paragraph className="mb-4">
+          <Paragraph className="!text-left !mb-4">
             I enjoy programming language implementation, deep learning, and
             building web apps. I also love data structures and algorithms and
             always try to match new problems to existing algorithmic solutions.
             But more generally I just really love programming.
           </Paragraph>
 
-          <Paragraph className="mb-4">
+          <Paragraph className="!text-left !mb-4">
             If any of this sounds interesting then feel free to contact me, I’m
             happy to have a chat.
           </Paragraph>
 
-          <Paragraph className="mt-12 text-sm text-gray-700 dark:text-gray-400">
+          <Paragraph className="!text-sm !text-gray-700 dark:!text-gray-400">
             <span className="font-bold mr-3">Email:</span>{" "}
             sanjeet.dasharath[at]gmail.com
           </Paragraph>
