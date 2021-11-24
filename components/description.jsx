@@ -1,6 +1,8 @@
-export default function Description({ children }) {
+export default function Description({ children, className }) {
   return (
-    <section className="px-10 mt-10 flex flex-col items-center max-w-2xl">
+    <section
+      className={`px-10 mt-10 flex flex-col items-center max-w-2xl ${className}`}
+    >
       {children}
     </section>
   );
@@ -8,6 +10,8 @@ export default function Description({ children }) {
 
 export function Paragraph({ children, className }) {
   return (
-    <p className={`my-3 text-center sm:text-left ${className}`}>{children}</p>
+    <p className={`my-3 w-full text-center sm:text-left ${className}`}>
+      {children}
+    </p>
   );
 }

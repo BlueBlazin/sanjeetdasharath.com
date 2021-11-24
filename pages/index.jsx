@@ -13,11 +13,12 @@ import {
   NextJsIcon,
 } from "../components/languages";
 import Description, { Paragraph } from "../components/description";
+import H1 from "../components/headings";
 
 export default function HomePage() {
   return (
     <Layout>
-      <h1 className="text-4xl mt-12">{"Hello, I'm Sanjeet 👋"}</h1>
+      <H1 className="text-4xl mt-12">{"Hello, I'm Sanjeet 👋"}</H1>
       <h2 className="flex">
         <Link href="https://twitter.com/suicuneblue">
           <a

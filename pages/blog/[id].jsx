@@ -3,6 +3,7 @@ import { MDXRemote } from "next-mdx-remote";
 
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
+import H1 from "../../components/headings";
 
 export default function BlogPost({ postData }) {
   return (
@@ -10,8 +11,8 @@ export default function BlogPost({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
-        <h1>{postData.title}</h1>
+      <article className="md:w-3/5 w-screen px-4">
+        <H1>{postData.title}</H1>
         <MDXRemote {...postData.serializedMdx} />
       </article>
     </Layout>

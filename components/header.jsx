@@ -11,7 +11,7 @@ export default function Header() {
         <HeaderLink name="Home" href="/" />
         <HeaderLink name="Projects" href="/projects" />
         <HeaderLink name="Blog" href="/blog" />
-        <HeaderLink name="Knowledge Bank" href="/knowledge-bank" />
+        {/* <HeaderLink name="Knowledge Bank" href="/knowledge-bank" /> */}
         <HeaderLink name="About" href="/about" />
         <div className="hidden md:block fixed right-11">
           <ModeToggle />
