@@ -55,7 +55,7 @@ export default function AboutPage() {
             generally around these as well.
           </Paragraph>
 
-          <Paragraph className={"text-left"}>
+          <Paragraph className={"!text-left"}>
             Some hobby projects that I have recently done:
           </Paragraph>
 
@@ -132,7 +132,7 @@ export default function AboutPage() {
             happy to have a chat.
           </Paragraph>
 
-          <Paragraph className="!text-sm !text-gray-700 dark:!text-gray-400">
+          <Paragraph className="!text-sm !text-left !text-gray-700 dark:!text-gray-400">
             <span className="font-bold mr-3">Email:</span>{" "}
             sanjeet.dasharath[at]gmail.com
           </Paragraph>
