@@ -41,10 +41,7 @@ export default function HomePage() {
       <Description>
         <Paragraph>
           I&apos;m a{" "}
-          <span className="font-semibold text-blue-500">programmer</span> and{" "}
-          <span className="font-semibold text-blue-500">
-            machine learning engineer
-          </span>{" "}
+          <span className="font-semibold text-blue-500">Software Engineer</span>{" "}
           currently located in Sydney, Australia 🦘 🇦🇺.
         </Paragraph>
 
