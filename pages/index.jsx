@@ -49,9 +49,9 @@ export default function HomePage() {
           I take pride in crafting quality software and improving at it every
           day. I have a very strong foundation in algorithms and
           data-structures. I have solved several hundreds of algorithmic
-          problems for over half a decade, primarily for fun. I love software
-          engineering at and outside of work and plan to continue becoming a
-          better programmer for the rest of my life.
+          challenge problems for over half a decade, primarily for fun. I love
+          software engineering at and outside of work and plan to continue
+          becoming a better programmer for the rest of my life.
         </Paragraph>
 
         <Paragraph>
